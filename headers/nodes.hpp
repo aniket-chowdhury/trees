@@ -28,6 +28,9 @@ public:
     BinNode(K keyval, T elemval, BinNode *leftval = nullptr, BinNode *rightval = nullptr)
         : key(keyval), element(elemval), left(leftval), right(rightval) {}
 
+    BinNode(K keyval, BinNode *leftval = nullptr, BinNode *rightval = nullptr)
+        : key(keyval), left(leftval), right(rightval) {}
+
     BinNode(BinNode *leftval = nullptr, BinNode *rightval = nullptr)
         : left(leftval), right(rightval) {}
 
